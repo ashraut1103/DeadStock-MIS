@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="521.0" prefWidth="746.0" stylesheets="@../../../resources/dark-theme.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="deadstock.ui.admin_login.MainController">
+   <children>
+      <JFXTabPane layoutY="54.0" prefHeight="467.0" prefWidth="746.0">
+         <tabs>
+            <Tab text="Manage Users">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton fx:id="addUser" alignment="BOTTOM_CENTER" contentDisplay="TOP" graphicTextGap="25.0" layoutX="24.0" layoutY="24.0" onAction="#add_user" prefHeight="117.0" prefWidth="115.0" ripplerFill="BLACK" style="-fx-border-color: #2A2E37; -fx-background-radius: 0; -fx-border-radius: 0;" text="Add User">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="USER_PLUS" size="45" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="deleteUser" alignment="BOTTOM_CENTER" contentDisplay="TOP" graphicTextGap="25.0" layoutX="169.0" layoutY="24.0" onAction="#delete_user" prefHeight="117.0" prefWidth="115.0" ripplerFill="BLACK" style="-fx-border-color: #2A2E37; -fx-background-radius: 0; -fx-border-radius: 0;" text="Delete User">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="USER_TIMES" size="45" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="showUsers" alignment="BOTTOM_CENTER" contentDisplay="TOP" graphicTextGap="25.0" layoutX="316.0" layoutY="24.0" onAction="#show_users" prefHeight="117.0" prefWidth="115.0" ripplerFill="BLACK" style="-fx-border-color: #2A2E37; -fx-background-radius: 0; -fx-border-radius: 0;" text="Show Users">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="GROUP" size="45" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Manage Stock">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton alignment="BOTTOM_CENTER" contentDisplay="TOP" graphicTextGap="25.0" layoutX="25.0" layoutY="22.0" onAction="#addItem" prefHeight="117.0" prefWidth="115.0" ripplerFill="BLACK" style="-fx-background-radius: 0; -fx-border-color: #2A2E37; -fx-border-radius: 0;" text="Add Item">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="PLUS_CIRCLE" size="45" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton alignment="BOTTOM_CENTER" contentDisplay="TOP" graphicTextGap="25.0" layoutX="169.0" layoutY="22.0" onAction="#deleteItem" prefHeight="117.0" prefWidth="115.0" ripplerFill="BLACK" style="-fx-background-radius: 0; -fx-border-color: #2A2E37; -fx-border-radius: 0;" text="Delete Item">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="MINUS_CIRCLE" size="45" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton alignment="BOTTOM_CENTER" contentDisplay="TOP" graphicTextGap="25.0" layoutX="461.0" layoutY="22.0" prefHeight="117.0" prefWidth="115.0" ripplerFill="BLACK" style="-fx-background-radius: 0; -fx-border-color: #2A2E37; -fx-border-radius: 0;" text="Add Stock">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="CART_PLUS" size="45" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton alignment="BOTTOM_CENTER" contentDisplay="TOP" graphicTextGap="25.0" layoutX="606.0" layoutY="22.0" prefHeight="117.0" prefWidth="115.0" ripplerFill="BLACK" style="-fx-background-radius: 0; -fx-border-color: #2A2E37; -fx-border-radius: 0;" text="Delete Stock">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="TRASH" size="45" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton alignment="BOTTOM_CENTER" contentDisplay="TOP" graphicTextGap="25.0" layoutX="25.0" layoutY="169.0" prefHeight="117.0" prefWidth="115.0" ripplerFill="BLACK" style="-fx-background-radius: 0; -fx-border-color: #2A2E37; -fx-border-radius: 0;" text="Show Stock">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="EYE" size="45" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton alignment="BOTTOM_CENTER" contentDisplay="TOP" graphicTextGap="25.0" layoutX="316.0" layoutY="22.0" onAction="#editItem" prefHeight="117.0" prefWidth="115.0" ripplerFill="BLACK" style="-fx-border-color: #2A2E37; -fx-background-radius: 0; -fx-border-radius: 0;" text="Edit Item">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="PENCIL" size="45" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton alignment="BOTTOM_CENTER" contentDisplay="TOP" graphicTextGap="25.0" layoutX="169.0" layoutY="169.0" prefHeight="117.0" prefWidth="115.0" ripplerFill="BLACK" style="-fx-border-color: #2A2E37; -fx-background-radius: 0; -fx-border-radius: 0;" text="Edit Stock">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="PENCIL" size="45" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Allocate">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+      <Label layoutX="23.0" layoutY="14.0" prefHeight="31.0" prefWidth="190.0" text="Welcome Admin" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="logout" contentDisplay="RIGHT" layoutX="627.0" layoutY="14.0" onAction="#logoutClick" prefHeight="31.0" prefWidth="105.0" styleClass="logout-button" stylesheets="@../../../resources/dark-theme.css" text="Logout">
+         <graphic>
+            <FontAwesomeIconView glyphName="USER_CIRCLE" size="30" translateX="10.0" translateY="-1.0" wrappingWidth="31.0" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

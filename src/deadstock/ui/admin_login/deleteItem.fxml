@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchor" prefHeight="232.0" prefWidth="400.0" stylesheets="@../../../resources/dark-theme.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="deadstock.ui.admin_login.DeleteItemController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="58.0" layoutX="-6.0" layoutY="-6.0" stroke="#2a2e37" strokeType="INSIDE" width="406.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.4523809523809524" startY="0.9952380952380953">
+               <stops>
+                  <Stop color="#ee2727" />
+                  <Stop color="#2a2e37" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="14.0" layoutY="8.0" text="Delete Item" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="item" labelFloat="true" layoutX="45.0" layoutY="91.0" maxWidth="219.0" minWidth="219.0" prefHeight="31.0" prefWidth="219.0" promptText="Item Name" styleClass="text-field" />
+      <JFXButton fx:id="search" layoutX="289.0" layoutY="91.0" onAction="#searchClicked" prefHeight="27.0" prefWidth="67.0" text="Search" />
+      <Label fx:id="msgLabel" alignment="CENTER" layoutX="18.0" layoutY="131.0" prefHeight="27.0" prefWidth="367.0" textFill="#977777">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="confirm" layoutX="116.0" layoutY="175.0" onAction="#confirmClick" prefHeight="27.0" prefWidth="67.0" styleClass="addUser-add-button" text="Confirm" visible="false" />
+      <JFXButton fx:id="cancel" layoutX="212.0" layoutY="176.0" onAction="#cancelClick" prefHeight="27.0" prefWidth="67.0" styleClass="addUser-cancel-button" text="Cancel" visible="false" />
+   </children>
+</AnchorPane>

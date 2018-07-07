@@ -1,0 +1,185 @@
+* {
+    -fx-primary : #2A2E37;
+    -fx-secondary : #FFFF8D;
+    -fx-primarytext : #B2B2B2;
+}
+
+.root{
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-primarytext;
+}
+
+.text-field{
+    -fx-text-fill: -fx-primarytext;
+    -jfx-focus-color: -fx-secondary;
+}
+
+.glyph-icon{
+    -fx-fill: -fx-primarytext;
+}
+
+.button{
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-color: -fx-primary;
+    -fx-border-color: -fx-secondary;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+}
+
+.button:hover{
+    -fx-background-color: -fx-secondary;
+    -fx-border-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+}
+
+/* Login Specific */
+.login-forgot-button{
+    -fx-background-color: -fx-primary;
+    -fx-border-color: -fx-primary;
+}
+.login-forgot-button:hover{
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-primarytext;
+    -fx-border-color: -fx-primary;
+}
+
+/* Tabpane Specific */
+.tab{
+    -fx-background-color: -fx-primary;
+    -fx-pref-width : 150;
+    -fx-pref-height : 50;
+    -fx-text-fill : #B2B2B2;
+}
+
+.tab-header-background{
+    -fx-background-color: -fx-primary;
+}
+
+/* Logout Button */
+.logout-button{
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-color: -fx-primary;
+    -fx-border-color: -fx-primary;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+}
+.logout-button:hover{
+    -fx-background-color: #F44336;
+    -fx-border-color : #F44336;
+    -fx-background-radius: 20px;
+    -fx-text-fill: #ffffff;
+    
+}
+
+/* Add User */
+.addUser-add-button{
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-color: -fx-primary;
+    -fx-border-color: #FFFF8D;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+}
+.addUser-add-button:hover{
+    -fx-background-color: #8BC34A;
+    -fx-border-color : #8BC34A;
+    -fx-background-radius: 20px;
+    -fx-text-fill: #ffffff;
+}
+
+.addUser-cancel-button{
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-color: -fx-primary;
+    -fx-border-color: #FFFF8D;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+}
+.addUser-cancel-button:hover{
+    -fx-background-color: #F44336;
+    -fx-border-color : #F44336;
+    -fx-background-radius: 20px;
+    -fx-text-fill: #ffffff;
+}
+
+/* Delete User */
+.deleteUser-confirm-button{
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-color: -fx-primary;
+    -fx-border-color: #FFFF8D;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+}
+.deleteUser-confirm-button:hover{
+    -fx-background-color: #8BC34A;
+    -fx-border-color : #8BC34A;
+    -fx-background-radius: 20px;
+    -fx-text-fill: #ffffff;
+}
+
+.deleteUser-cancel-button{
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-color: -fx-primary;
+    -fx-border-color: #FFFF8D;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+}
+.deleteUser-cancel-button:hover{
+    -fx-background-color: #F44336;
+    -fx-border-color : #F44336;
+    -fx-background-radius: 20px;
+    -fx-text-fill: #ffffff;
+}
+
+/* ScrollPane */
+.increment-button{
+    -fx-background-color: transparent;
+    -fx-background-radius: 2em;
+}
+
+.scroll-pane {
+    -fx-background : -fx-primary;
+    -fx-border-color: -fx-primary;
+    -jfx-focus-color: -fx-primary;
+}
+
+.scroll-bar:vertical .track{
+    -fx-background-color:-fx-primary;
+    -fx-border-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-border-radius:2em;
+}
+
+.scroll-bar:vertical .thumb{
+    -fx-background-color:derive(black,90%);
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 2em;
+
+}
+
+.scroll-bar:vertical .increment-button{
+    -fx-background-color:-fx-primary;
+    -fx-background-radius: 0em;
+    -fx-padding:0 10 0 0;
+}
+
+.scroll-bar:vertical .increment-arrow{
+    -fx-shape: " ";	
+    -fx-padding:0;
+}
+
+.scroll-bar:vertical .decrement-button{
+    -fx-background-color:-fx-primary;
+    -fx-background-radius: 0em;
+    -fx-padding:0 10 0 0;
+}
+
+.scroll-bar:vertical .decrement-arrow{
+    -fx-shape: " ";	
+    -fx-padding:0;
+}
+
+/* ComboBox Specific */
+
+.combo-box .list-cell{
+    -fx-fill: #B2B2B2;
+    -fx-text-fill: -fx-primarytext;
+}

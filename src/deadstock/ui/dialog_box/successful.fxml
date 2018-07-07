@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="155.0" prefWidth="404.0" stylesheets="@dialogCSS.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="deadstock.ui.dialog_box.SuccessfullController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1fff22" height="57.0" layoutX="-6.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="410.0" />
+      <Label layoutX="52.0" layoutY="9.0" prefHeight="27.0" prefWidth="103.0" text="Successful !" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="message" alignment="CENTER" layoutX="11.0" layoutY="74.0" prefHeight="17.0" prefWidth="382.0" text="Data Added Successfully !" textFill="#bcb6b6" />
+      <JFXButton fx:id="ok" layoutX="174.0" layoutY="108.0" onAction="#okClicked" prefHeight="27.0" prefWidth="57.0" text="OK" />
+      <FontAwesomeIconView glyphName="CHECK_CIRCLE" layoutX="14.0" layoutY="33.0" size="30" />
+   </children>
+</AnchorPane>

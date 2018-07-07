@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="378.0" prefWidth="392.0" stylesheets="@../../../resources/dark-theme.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="deadstock.ui.admin_login.DeleteUserController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="58.0" layoutX="-6.0" layoutY="-6.0" stroke="#2a2e37" strokeType="INSIDE" width="398.0">
+         <fill>
+            <LinearGradient endX="0.8095238095238095" endY="1.0" startX="0.3" startY="1.0">
+               <stops>
+                  <Stop color="#f84b4b" />
+                  <Stop color="#2a2e37" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <JFXTextField fx:id="find" focusColor="#9a9999" labelFloat="true" layoutX="55.0" layoutY="87.0" maxWidth="291.0" minWidth="197.0" prefHeight="31.0" prefWidth="197.0" promptText="Username" />
+      <Label layoutX="14.0" layoutY="10.0" text="Remove User" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLabel" layoutX="55.0" layoutY="147.0" text="Name              :" textFill="#726f6f" visible="false">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="userLabel" layoutX="53.0" layoutY="190.0" text="Username        :" textFill="#726f6f" visible="false">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="labLabel" layoutX="53.0" layoutY="240.0" text="Lab In-Charge  :" textFill="#726f6f" visible="false">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="confirm" layoutX="93.0" layoutY="303.0" onAction="#confirm" prefHeight="40.0" prefWidth="84.0" styleClass="deleteUser-confirm-button" text="Confirm" visible="false" />
+      <JFXButton fx:id="cancel" layoutX="206.0" layoutY="303.0" onAction="#cancel" prefHeight="40.0" prefWidth="84.0" styleClass="deleteUser-cancel-button" text="Cancel" visible="false" />
+      <Label fx:id="name" layoutX="183.0" layoutY="149.0" prefHeight="21.0" prefWidth="155.0" textFill="#726f6f">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="username" layoutX="183.0" layoutY="190.0" prefHeight="21.0" prefWidth="155.0" textFill="#726f6f">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lab" layoutX="183.0" layoutY="240.0" prefHeight="21.0" prefWidth="155.0" textFill="#726f6f">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorLabel" layoutX="98.0" layoutY="149.0" text="User Not Found !" textFill="#726f6f" visible="false">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="ok" layoutX="161.0" layoutY="211.0" onAction="#okClicked" prefHeight="31.0" prefWidth="65.0" text="OK" visible="false" />
+      <JFXButton fx:id="search" layoutX="263.0" layoutY="80.0" onAction="#search" prefHeight="31.0" prefWidth="75.0" text="Search" />
+   </children>
+</AnchorPane>
